@@ -1,20 +1,25 @@
 <html>
 <head>
-<title>my first html document</title></head>
+<title>Calculator Application</title></head>
+<script lang="javascript">
+<!--
+function calculate(){
+var a=Number(calc.num1.value);
+var b=Number(calc.num2.value);
+calc.rez.value=a+b;
+//alert(a+b);
+}
+//-->
+</script>
 <body>
-<b>Нормализация</b> - процесс разбиения модели на более мелкие сущности, для исключения дублиравания атрибутов, которые являются причинами появляения аномалий.
-<p><b><i>Виды нормальных форм</i></b></p>
-
-<ul>
-<li>1 нормальная форма
-</li>
-<li>вторая нормальная форма</li>
-<li>третья нормальная форма</li>
-<li>нормальная форма Бойса кодда (НФБК)</li>
-<li>четвертая нормальная форма</li>
-<li>пятая нормальная форма</li>
-<li>шестая нормальная форма</li>
-</ul><br>
-В практике часто проводят нормализацию до 3 НФ, иди до НФБК. Дальнейшая нормализация модели является избыточной.
+<form name="calc">
+<div id="expression">
+<input type="text" name="num1" size=2> + <input type="text" name="num2" size=2> = <input type="text" name="rez" size=4>
+</div>
+<br>
+<input type="button" value="Get rezult" onclick="calculate()">    <input type="reset" value="Clear">
+</form>
+<br>
+<p>Калькулятор V 1.0. Вычисление суммы двух чисел.</p>
 </body>
 </html>
